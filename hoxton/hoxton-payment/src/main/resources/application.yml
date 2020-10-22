@@ -1,0 +1,15 @@
+server:
+  port: 8011
+spring:
+  application:
+    name: hoxton-payment
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://vps1:3306/db_micromall?characterEncoding=utf-8&useSSL=false
+    username: ct-gogo
+    password: ct-gogo
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  type-aliases-package: com.lc.springcloud.hoxton.payment.entity
